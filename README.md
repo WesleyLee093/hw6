@@ -9,8 +9,8 @@
 | [HW1 選擇語言與工具](hw1/README.md) | 工具介紹、功能說明及 4 例 Line Coverage 示範。 |
 | [HW2 Line Coverage](hw2/README.md) | 5 例，16/16 行（100%）。 |
 | [HW3 Graph Coverage](hw3/README.md) | Edge 1 例（13/13）、Edge-Pair 3 例（15/15）、Path 3 例（3/3），均為 100%。 |
-| [HW4 Stress Testing Coverage](hw4/README.md) | 8 例，10/10 個有效極值與無效類別目標（100%）。 |
-| [HW5 Logical Expressions Coverage](hw5/README.md) | Predicate 2 例（2/2）、Clause 2 例（4/4）、Combinatorial 4 例（4/4），均為 100%。 |
+| [HW4 Stress Testing Coverage](hw4/README.md) | 8 例，10/10 個有效極值與無效類別目標（100%）。[單項報告與流程圖](hw4/REPORT.md) |
+| [HW5 Logical Expressions Coverage](hw5/README.md) | Predicate 2 例（2/2）、Clause 2 例（4/4）、Combinatorial 4 例（4/4），均為 100%。[單項報告與流程圖](hw5/REPORT.md) |
 
 ## HW2 與 HW3 修正紀錄
 
