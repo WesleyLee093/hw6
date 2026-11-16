@@ -82,10 +82,51 @@ flowchart TD
 
 ## 5. 工具驗證
 
-使用 Python 3.14.5、pytest 與 pytest-cov。安裝專案的 `requirements.txt` 後，在專案根目錄執行下列指令。 [測試程式](https://github.com/alanlu01/software-normalize/blob/main/hw4/test_stress_coverage.py)
+### 環境與指令
+
+實測環境為 Python 3.14.5、pytest 9.1.1、pytest-cov 7.1.0 與 coverage.py 7.16.2。從專案根目錄建立虛擬環境並安裝依賴。
 
 ```sh
-python -m pytest hw4 -v --cov-branch
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
 ```
 
-實測 **8 例通過**，程式敘述涵蓋 17/17 行，分支出口涵蓋 14/14。測試同時比對無效案例的例外型別與訊息，確定各案例觸發指定的驗證條件。Stress Testing 的 10 個涵蓋目標由案例表逐項核對。
+Windows PowerShell 使用 `py -m venv .venv`，後續以 `.\.venv\Scripts\python.exe` 取代各指令中的 `python`。
+
+### HW4 完整測試
+
+```sh
+python -m pytest hw4 -v --cov-branch --color=no
+```
+
+終端輸出節錄如下。
+
+```text
+hw4/test_stress_coverage.py::test_valid_extremes[T1] PASSED              [ 12%]
+hw4/test_stress_coverage.py::test_valid_extremes[T2] PASSED              [ 25%]
+hw4/test_stress_coverage.py::test_invalid_inputs[T3] PASSED              [ 37%]
+hw4/test_stress_coverage.py::test_invalid_inputs[T4] PASSED              [ 50%]
+hw4/test_stress_coverage.py::test_invalid_inputs[T5] PASSED              [ 62%]
+hw4/test_stress_coverage.py::test_invalid_inputs[T6] PASSED              [ 75%]
+hw4/test_stress_coverage.py::test_invalid_inputs[T7] PASSED              [ 87%]
+hw4/test_stress_coverage.py::test_invalid_inputs[T8] PASSED              [100%]
+
+Name              Stmts   Miss Branch BrPart  Cover   Missing
+-------------------------------------------------------------
+hw4/checkout.py      17      0     14      0   100%
+-------------------------------------------------------------
+TOTAL                17      0     14      0   100%
+Required test coverage of 100.0% reached. Total coverage: 100.00%
+============================== 8 passed in 0.04s ===============================
+```
+
+8 例全部通過。測試比對有效案例的回傳值，並比對無效案例的例外型別與訊息。工具報表顯示 17 個程式敘述與 14 個分支出口皆有執行。Stress Testing 的 10/10 個目標依第 3 節的案例表核對。 [測試程式](https://github.com/alanlu01/software-normalize/blob/main/hw4/test_stress_coverage.py)
+
+### HTML 涵蓋率報表
+
+```sh
+python -m pytest hw4 hw5 --cov-branch --cov-report=term-missing --cov-report=html
+```
+
+合跑實測為 `12 passed`，`30` 個程式敘述、`18` 個分支出口皆有執行。開啟 `htmlcov/index.html` 後，點選待測檔案可查看逐行標色。終端的 `Missing` 欄列出漏測的行或分支。
