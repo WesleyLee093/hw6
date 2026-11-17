@@ -1,0 +1,134 @@
+[
+  {
+    "id": "M01",
+    "line": 4,
+    "before": "scaled = y // 10",
+    "after": "scaled = y + 10",
+    "case": [
+      1,
+      10
+    ],
+    "expected_original": 1
+  },
+  {
+    "id": "M02",
+    "line": 5,
+    "before": "if x < 0:",
+    "after": "if x <= 0:",
+    "case": [
+      0,
+      10
+    ],
+    "expected_original": 0
+  },
+  {
+    "id": "M03",
+    "line": 6,
+    "before": "weight = -1",
+    "after": "weight = -2",
+    "case": [
+      -1,
+      10
+    ],
+    "expected_original": -1
+  },
+  {
+    "id": "M04",
+    "line": 7,
+    "before": "elif x == 0:",
+    "after": "elif x == 1:",
+    "case": [
+      0,
+      10
+    ],
+    "expected_original": 0
+  },
+  {
+    "id": "M05",
+    "line": 8,
+    "before": "weight = 0",
+    "after": "weight = 1",
+    "case": [
+      0,
+      10
+    ],
+    "expected_original": 0
+  },
+  {
+    "id": "M06",
+    "line": 9,
+    "before": "elif x == 1:",
+    "after": "elif x == 2:",
+    "case": [
+      1,
+      10
+    ],
+    "expected_original": 1
+  },
+  {
+    "id": "M07",
+    "line": 10,
+    "before": "weight = 1",
+    "after": "weight = 4",
+    "case": [
+      1,
+      10
+    ],
+    "expected_original": 1
+  },
+  {
+    "id": "M08",
+    "line": 11,
+    "before": "elif x == 2:",
+    "after": "elif x > 2:",
+    "case": [
+      2,
+      10
+    ],
+    "expected_original": 2
+  },
+  {
+    "id": "M09",
+    "line": 12,
+    "before": "weight = 2",
+    "after": "weight = 5",
+    "case": [
+      2,
+      10
+    ],
+    "expected_original": 2
+  },
+  {
+    "id": "M10",
+    "line": 14,
+    "before": "weight = 3",
+    "after": "weight = 6",
+    "case": [
+      3,
+      10
+    ],
+    "expected_original": 3
+  },
+  {
+    "id": "M11",
+    "line": 15,
+    "before": "result = weight * scaled",
+    "after": "result = weight + scaled",
+    "case": [
+      0,
+      10
+    ],
+    "expected_original": 0
+  },
+  {
+    "id": "M12",
+    "line": 16,
+    "before": "return result",
+    "after": "return result + 1",
+    "case": [
+      1,
+      10
+    ],
+    "expected_original": 1
+  }
+]

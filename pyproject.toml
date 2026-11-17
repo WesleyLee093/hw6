@@ -4,7 +4,7 @@ addopts = "--cov --cov-report=term-missing"
 [tool.coverage.run]
 core = "pytrace"
 include = ["hw*/*.py"]
-omit = ["*/test_*.py", ".venv/*"]
+omit = ["*/test_*.py", "*/mutants/*", ".venv/*"]
 
 [tool.coverage.report]
 fail_under = 100

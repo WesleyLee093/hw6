@@ -1,0 +1,16 @@
+ 1  # Valid domain: integer x; y is one of 10, 20, 30.
+ 2  # The output specification is defined in hw6/REPORT.md.
+ 3  def F(x: int, y: int) -> int:
+ 4      scaled = y // 10
+ 5      if x < 0:
+ 6          weight = -1
+ 7      elif x == 0:
+ 8          weight = 0
+ 9      elif x == 1:
+10          weight = 1
+11      elif x == 2:
+12          weight = 2
+13      else:
+14          weight = 3
+15      result = weight * scaled
+16      return result

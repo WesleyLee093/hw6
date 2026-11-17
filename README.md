@@ -1,5 +1,7 @@
 # 軟體正規方法小組作業
 
+**最新 HW6 完整作業：** [PDF 含截圖](hw6/HW6_完整作業報告.pdf) · [Word 含截圖](hw6/HW6_完整作業報告.docx) · [線上案例報告](hw6/REPORT.md)
+
 - 程式語言為 Python。驗證環境為 Python 3.14.5。
 - 單元測試使用 pytest，行與分支涵蓋率使用 pytest-cov（coverage.py）。
 - [報告用 Markdown](REPORT.md)包含工具介紹、各作業結果、示範流程與使用心得。
@@ -11,7 +13,7 @@
 | [HW3 Graph Coverage](hw3/README.md) | Edge 1 例（13/13）、Edge-Pair 3 例（15/15）、Path 3 例（3/3），均為 100%。 |
 | [HW4 Stress Testing Coverage](hw4/README.md) | 8 例，10/10 個有效極值與無效類別目標（100%）。[單項報告與流程圖](hw4/REPORT.md) |
 | [HW5 Logical Expressions Coverage](hw5/README.md) | Predicate 2 例（2/2）、Clause 2 例（4/4）、Combinatorial 4 例（4/4），均為 100%。[單項報告與流程圖](hw5/REPORT.md) |
-| [HW6 Input Domain Characterization](hw6/README.md) | Categorization 4 例（10/10 類別）、Combinatorial 36 例（36/36 組合），均為 100%。[中文報告](hw6/REPORT.md) |
+| [HW6 Input Domain 與 Mutation Testing](hw6/README.md) | 課程 4／36 例；F 分類 5 例、組合 15 例及補充 30 項；12 個變異全部被殺死。[完整報告](hw6/REPORT.md) |
 
 ## HW2 與 HW3 修正紀錄
 
@@ -31,6 +33,8 @@ Windows PowerShell 可用 `py -m venv .venv` 建立環境，再用 `.\.venv\Scri
 
 `pytest` 會自動顯示涵蓋率與遺漏行號，並檢查 100% 門檻。可加上 `--cov-report=html` 產生有逐行標色的 `htmlcov/index.html`。各作業指定的涵蓋率依各自的案例表與分析計算。
 
-## HW6 本機驗證
+## HW6 最新完整作業
 
-本次使用 Python 3.9.6，請依 [HW6 報告](hw6/REPORT.md) 安裝相容套件。全套 65 項通過，79/79 行、44/44 分支出口均為 100%。原 HW1～HW5 的環境與歷史結果保留於原報告。
+第 5 題兩組輸入領域與第 6 題變異測試已完成。[PDF 含截圖](hw6/HW6_完整作業報告.pdf) · [Word 含截圖](hw6/HW6_完整作業報告.docx) · [完整案例報告](hw6/REPORT.md)
+
+本次 Python 3.9.6 使用 [相容套件清單](hw6/requirements-py39.txt)，HW6 共 105 項、全專案共 129 項通過。全專案 92/92 行、52/52 分支出口皆 100%。
