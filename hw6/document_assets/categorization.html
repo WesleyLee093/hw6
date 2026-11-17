@@ -1,0 +1,24 @@
+<meta charset="UTF-8"><style>body{margin:24px;background:#fff;color:#162333;font:18px Arial}h1{font-size:24px}p{font-size:16px}pre{font:16px/1.45 Menlo,monospace;white-space:pre-wrap;overflow-wrap:anywhere;border:1px solid #ccd4dd;padding:18px;background:#f7f9fc}</style><h1>categorization | pytest execution log</h1><p>Command: .venv/bin/python -m pytest hw6 -v -k categorization --cov-branch</p><pre>============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.4.2, pluggy-1.6.0 -- /Users/lzw/DEV/軟體正規/software-normalize/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/lzw/DEV/軟體正規/software-normalize
+configfile: pyproject.toml
+plugins: cov-6.3.0
+collecting ... collected 41 items / 37 deselected / 4 selected
+
+hw6/test_input_domain.py::test_categorization[CAT01] PASSED              [ 25%]
+hw6/test_input_domain.py::test_categorization[CAT02] PASSED              [ 50%]
+hw6/test_input_domain.py::test_categorization[CAT03] PASSED              [ 75%]
+hw6/test_input_domain.py::test_categorization[CAT04] PASSED              [100%]
+
+================================ tests coverage ================================
+_______________ coverage: platform darwin, python 3.9.6-final-0 ________________
+
+Name            Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------
+hw6/course.py      12      0      6      0   100%
+-----------------------------------------------------------
+TOTAL              12      0      6      0   100%
+Required test coverage of 100.0% reached. Total coverage: 100.00%
+======================= 4 passed, 37 deselected in 0.12s =======================
+</pre>

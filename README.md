@@ -11,6 +11,7 @@
 | [HW3 Graph Coverage](hw3/README.md) | Edge 1 例（13/13）、Edge-Pair 3 例（15/15）、Path 3 例（3/3），均為 100%。 |
 | [HW4 Stress Testing Coverage](hw4/README.md) | 8 例，10/10 個有效極值與無效類別目標（100%）。[單項報告與流程圖](hw4/REPORT.md) |
 | [HW5 Logical Expressions Coverage](hw5/README.md) | Predicate 2 例（2/2）、Clause 2 例（4/4）、Combinatorial 4 例（4/4），均為 100%。[單項報告與流程圖](hw5/REPORT.md) |
+| [HW6 Input Domain Characterization](hw6/README.md) | Categorization 4 例（10/10 類別）、Combinatorial 36 例（36/36 組合），均為 100%。[中文報告](hw6/REPORT.md) |
 
 ## HW2 與 HW3 修正紀錄
 
@@ -29,3 +30,7 @@ python -m pytest -v --cov-branch
 Windows PowerShell 可用 `py -m venv .venv` 建立環境，再用 `.\.venv\Scripts\python.exe` 執行安裝與測試指令。
 
 `pytest` 會自動顯示涵蓋率與遺漏行號，並檢查 100% 門檻。可加上 `--cov-report=html` 產生有逐行標色的 `htmlcov/index.html`。各作業指定的涵蓋率依各自的案例表與分析計算。
+
+## HW6 本機驗證
+
+本次使用 Python 3.9.6，請依 [HW6 報告](hw6/REPORT.md) 安裝相容套件。全套 65 項通過，79/79 行、44/44 分支出口均為 100%。原 HW1～HW5 的環境與歷史結果保留於原報告。

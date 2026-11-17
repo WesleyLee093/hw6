@@ -77,3 +77,7 @@ python -m pytest hw5 -v --cov-branch
 | 4:15–5:45 | HW4 有效範圍、兩個極值案例與六種無效類別 |
 | 5:45–7:15 | HW5 真值表，對照兩例與四例的涵蓋結果 |
 | 7:15–8:00 | 工具使用心得與全套實測結果 |
+
+## HW6 新增：Input Domain Characterization
+
+[完整報告及案例表](hw6/REPORT.md)提供 4 個 Categorization 案例與 36 個 Combinatorial 案例，分別達成 10/10 類別與 36/36 組合涵蓋。新增 40 個功能案例及 1 個測試集合檢查後，本機 Python 3.9.6 全專案實測為 65 項通過、79/79 行及 44/44 分支出口（100%）。上文 24 例為原 HW1～HW5 的歷史結果。
